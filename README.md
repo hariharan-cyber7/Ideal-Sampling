@@ -17,9 +17,9 @@ In natural sampling method, the top of each pulse in the sampled signal retains 
 The flat top sampling is also the practical sampling technique. In the flat top sampling, the sampling signal is also a pulse train. The top of each pulse in the sampled signal remain constant and is equal to the instantaneous value of the input signal 𝑥(𝑛) at the start of the samples.
 
 # Program
-```
-# Impulse Sampling
 
+# Impulse Sampling
+```sci
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import resample
@@ -61,9 +61,9 @@ plt.plot(t, reconstructed)
 plt.title("Reconstructed Signal")
 plt.grid()
 plt.show()
-
+```
 # Natural Sampling
-
+```sci
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import butter, lfilter
@@ -120,10 +120,10 @@ plt.title("Reconstructed Signal")
 
 plt.tight_layout()
 plt.show()
-
+```
 
 # Flat-Top Sampling
-
+```sci
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import butter, lfilter
@@ -185,18 +185,19 @@ plt.show()
 
 ```
 # Output Waveform
-
+# Ideal sampling
 <img width="568" height="435" alt="dc_exp1_1" src="https://github.com/user-attachments/assets/3d52fdb6-a59f-46f1-8147-9d367ad48b98" />
 <img width="568" height="435" alt="dc_exp1_2" src="https://github.com/user-attachments/assets/2a64a7a5-29ec-4baf-a598-0756776ac2d9" />
 <img width="568" height="435" alt="dc_exp1_3" src="https://github.com/user-attachments/assets/7089cc34-1d0a-4d4b-85ff-b45259c77164" />
 
-
+# Natural sampling
 <img width="1238" height="985" alt="Screenshot 2026-01-30 140226" src="https://github.com/user-attachments/assets/7f56c4a7-0a0a-4acf-a979-cbef6dc3e4a7" />
+
+# Front top sampling
 <img width="1232" height="981" alt="Screenshot 2026-01-30 140241" src="https://github.com/user-attachments/assets/33c77fab-fe7f-43a6-992d-75c2aecab98e" />
 
 
 # Results
-```
-Attach the output waveform
-```
-# Hardware experiment output waveform.
+
+Thus, the construction and reconstruction of Ideal, Natural, and Flat-top sampling were successfully implemented using Python, and the corresponding waveforms were obtained.
+
